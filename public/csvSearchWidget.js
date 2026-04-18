@@ -11,6 +11,7 @@ function checkWidgetRoot() {
     widgetRoot = getWidgetRoot();
   } catch(error) {
     throw new Error('Widget Root Error: ', error.message);
+  }
 }
 
 function main() {
