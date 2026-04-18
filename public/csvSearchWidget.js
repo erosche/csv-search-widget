@@ -7,13 +7,8 @@ function getWidgetRoot() {
 }
 
 function checkWidgetRoot() {
-  let widgetRoot;
-
-  try {
-    widgetRoot = getWidgetRoot();
-  } catch(error) {
-    throw new Error('Widget Root Error: ', error.message);
-  }
+  const widgetRoot = getWidgetRoot();
+  if(!widgetRoot) throw new Error(`Widget Root Error: container with id ${WIDGET_ID} not found`);
   return widgetRoot;
 }
 
@@ -23,7 +18,7 @@ function main() {
     return "main success 1";
 
   } catch(error) {
-    throw new Error('main error: ', error);
+    throw new Error('main error: ', error.message);
   }
 }
 
