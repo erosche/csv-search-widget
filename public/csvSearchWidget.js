@@ -13,13 +13,7 @@ function checkWidgetRoot() {
 }
 
 function main() {
-  try {
-    checkWidgetRoot();
-    return "main success 1";
-
-  } catch(error) {
-    throw new Error('main error: ', error.message);
-  }
+  checkWidgetRoot();
 }
 
 main();
