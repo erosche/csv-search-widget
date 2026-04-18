@@ -7,11 +7,14 @@ function getWidgetRoot() {
 }
 
 function checkWidgetRoot() {
+  let widgetRoot;
+
   try {
     widgetRoot = getWidgetRoot();
   } catch(error) {
     throw new Error('Widget Root Error: ', error.message);
   }
+  return widgetRoot;
 }
 
 function main() {
