@@ -1,0 +1,34 @@
+{
+  "name": "csv-search-widget",
+  "version": "1.0.0",
+  "description": "Manage a search widget with a CSV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/erosche/csv-search-widget.git"
+  },
+  "keywords": [
+    "javascript",
+    "search",
+    "widget",
+    "embeddable",
+    "search-widget",
+    "node",
+    "vercel"
+  ],
+  "author": "Edwin Schenk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erosche/csv-search-widget/issues"
+  },
+  "homepage": "https://github.com/erosche/csv-search-widget#readme",
+  "dependencies": {
+    "next": "^16.2.4"
+  }
+}
