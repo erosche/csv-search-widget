@@ -78,7 +78,7 @@ async function writeJSONFile(file, json_path) {
 
 async function buildIndex(file, output_path) {
   console.log(file);
-  const records = csv_parse(file);
+  const records = await csv_parse(file);
   await fs.writeFile(output_path, JSON.stringify(records, null, 2), 'utf-8');
   console.log(`Generated ${output_path}`);
 }
