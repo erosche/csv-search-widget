@@ -5,3 +5,6 @@ node_modules/
 data/*
 !data/.gitkeep
 
+# misc foler noise
+*.swp
+.DS_Store
